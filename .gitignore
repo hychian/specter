@@ -1,0 +1,47 @@
+# Specter — .gitignore
+
+# Entorno y secretos
+.env
+*.key
+*.pem
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Reportes generados (contienen datos sensibles de engagements)
+reports/*.md
+reports/*.html
+reports/*.pdf
+
+# Capturas de red
+*.pcap
+*.cap
+*.pcapng
+
+# Wordlists y diccionarios
+*.txt
+!requirements.txt
+*.lst
+*.dict
+
+# Hashes capturados
+*.hccapx
+*.hc22000
+*.hash
+
+# Engagements (datos de clientes — nunca al repositorio)
+engagements/*/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
